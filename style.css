@@ -44,10 +44,6 @@ h1, p, h2 {
     justify-content: space-between;
 }
 
-.rating span:hover{
-    animation-name: mouse-in;
-}
-
 .rating span{
     display: flex;
     align-items: center;
@@ -60,17 +56,15 @@ h1, p, h2 {
     font-size: .7rem;
     font-weight: 700;
     animation-name: mouse-out;
-    animation-duration: 2s;
+    animation-duration: 1s;
 }
 
+.rating span:hover{
+    animation-name: background-color;
+    background-color: var(--orange);
+}
 
-@keyframes mouse-in {
-    0%   {background-color:var(--orange); }
-    100% {background-color:var(--orange); ;}
-  }
  
-
-
  @keyframes mouse-out {
     0%   {background-color:var(--orange); }
     75%  {background-color:var(--light-grey); }
