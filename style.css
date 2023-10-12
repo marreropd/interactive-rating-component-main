@@ -4,7 +4,7 @@
     --white: hsl(0, 0%, 100%);
     --light-grey: hsl(217, 12%, 63%);
     --medium-grey: hsla(216, 12%, 54%, 0.175);
-    --dark-blue: hsl(213, 19%, 18%);
+    --dark-blue: hsla(213, 20%, 18%, 0.749);
     --very-dark-blue: hsl(216, 12%, 8%);
     --orange: hsl(25, 97%, 53%);
     --main-font: 'Overpass', sans-serif;
@@ -29,14 +29,36 @@ h1, p, h2 {
     margin: 0;
 }
 .card{
-    padding: 2rem 1.5rem;
+    padding: 1.5rem;
     border-radius: 1rem;
     color: white;
     background-color: var(--dark-blue);
-    max-width: 25rem;
-    gap: 1rem;
+    max-width: 20rem;
+    gap: 1.5rem;
     display: flex;
     flex-direction: column;
+}
+
+.card-top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.2rem;
+    width: 2rem;
+    height: 2rem; 
+    background-color: var(--medium-grey);
+    border-radius: 100%;
+}
+
+h1{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.card p{
+    font-size: .8rem;
+    color: var(--light-grey);
+;
 }
 
 .rating{
@@ -53,21 +75,50 @@ h1, p, h2 {
     height: 2rem; 
     border-radius: 100%;
     background-color: var(--medium-grey);
+    color: var(--light-grey);
     font-size: .7rem;
     font-weight: 700;
-    animation-name: mouse-out;
+    animation-name: mouse-rating-out;
     animation-duration: 1s;
+    cursor: pointer;
+
 }
 
 .rating span:hover{
     animation-name: background-color;
     background-color: var(--orange);
+    color: var(--white);
 }
 
  
- @keyframes mouse-out {
-    0%   {background-color:var(--orange); }
-    75%  {background-color:var(--light-grey); }
+ @keyframes mouse-rating-out {
+    0%   {background-color:var(--orange); color: var(--white);}
+    75%  {background-color:var(--light-grey); color: var(--white);}
     100% {background-color:var(--medium-grey); ;}
   }
  
+  button{
+    padding: .8rem;
+    background-color: var(--orange);
+    border-radius: 2rem;
+    border: 0;
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: .1rem ;
+    font-weight: 600;
+    cursor: pointer;
+
+    -moz-transition: all .2s  ease-in;
+    /* WebKit */
+    -webkit-transition: all .2s  ease-in;
+    /* Opera */
+    -o-transition: all .2s  ease-in;
+    /* Standard */
+    transition: all .2s ease-in;
+  }
+
+  button:hover{
+    background-color: var(--white);
+    color: var(--orange);
+}
+
