@@ -29,11 +29,12 @@ h1, p, h2 {
     margin: 0;
 }
 .card{
-    padding: 1.5rem;
+    padding:1.5rem;
     border-radius: 1rem;
     color: white;
     background-color: var(--dark-blue);
     max-width: 20rem;
+    max-height: 23rem;
     gap: 1.5rem;
     display: flex;
     flex-direction: column;
@@ -122,3 +123,44 @@ h1{
     color: var(--orange);
 }
 
+.thanks-card{
+    display: none;
+    padding: 2.3rem 1.3rem;
+    border-radius: 1rem;
+    color: white;
+    background-color: var(--dark-blue);
+    max-width: 20rem;
+    min-height: 23rem;
+}
+
+
+.thanks-card-content{    
+    gap: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#thanks-card-dynamic-text{
+    color: var(--orange);
+    font-size: .9rem;
+    padding: .4rem .7rem;
+    border-radius: 1rem;
+    background-color: var(--medium-grey);
+}
+
+.thanks-card-text-content{    
+   text-align: center;
+   font-size: .9rem;
+   line-height: 1.5rem;
+   color: var(--light-grey);
+}
+
+.hide{
+    display: none;
+}
+
+.show{
+    display: block;
+}
