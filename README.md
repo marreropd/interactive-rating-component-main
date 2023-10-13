@@ -2,6 +2,12 @@
 
 ![Design preview for the Interactive rating component coding challenge](./design/desktop-preview.jpg)
 
+## Snapshots! 👋
+
+![Snapshots](image.png)
+
+![Snapshots](image-1.png)
+
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
